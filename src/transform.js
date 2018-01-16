@@ -52,8 +52,5 @@ class Transform {
 
 let identity = new Transform(1, 0, 0)
 
-export default function transform (component) {
-  return component.__zoom || identity
-}
-
+export default Transform
 export { identity }

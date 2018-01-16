@@ -5,31 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zoom and Pan Playground</title>
-    <style>
-      .axis path {
-        display: none;
-      }
-
-      .axis line {
-        stroke-opacity: 0.3;
-        shape-rendering: crispEdges;
-      }
-
-      .view {
-        fill: url(#gradient);
-        stroke: #000;
-      }
-
-      button {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-      }
-    </style>
   </head>
   <body>
-    <button>Reset</button>
-    <svg width="960" height="500">
+    <div id="y">
+      <button class="decrement">- Translate Y</button>
+      <button class="increment">+ Translate Y</button>
+      <p id="result-y"></p>
+    </div>
+    <hr>
+    <div id="x">
+      <button class="decrement">- Translate X</button>
+      <button class="increment">+ Translate X</button>
+      <p id="result-x"></p>
+    </div>
+    <hr>
+    <button id="zoom">Zoom x2</button>
+    <hr>
+    <button id="reset">Reset</button>
+    <hr>
+    <!-- <svg width="960" height="500">
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop   offset="0.0%" stop-color="#2c7bb6"></stop>
@@ -43,7 +37,7 @@
           <stop offset="100.0%" stop-color="#d7191c"></stop>
         </linearGradient>
       </defs>
-    </svg>
+    </svg> -->
     <script src="./zoom-pan-playground.js"></script>
   </body>
 </html>

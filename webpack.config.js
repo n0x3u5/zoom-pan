@@ -14,6 +14,7 @@ module.exports = {
     }]
   },
   devServer: {
-    contentBase: path.join(__dirname, 'sample')
+    contentBase: path.join(__dirname, 'sample'),
+    watchContentBase: true
   }
 }

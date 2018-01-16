@@ -1,9 +1,9 @@
-import Dispatcher from './dispatcher'
-
 class Zoom {
-  on () {
-    return new Dispatcher('zoom')
-  }
+  transform () {}
+
+  scaleBy () {}
+
+  on () {}
 }
 
 export default Zoom
